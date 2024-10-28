@@ -79,5 +79,16 @@
         }
         console.log("The average of array:",midpointOfArray())
         console.log("*******************************************")
-        
+        function uniqueArray(){
+            const items = ['bread', 'jam', 'milk',  'egg',  'flour',  'oil',  'rice',  'coffee powder',  'sugar',  'salt',  'egg',  'flour'];
+            console.log("The old array:",items)
+            const newarray=[];
+            for(var i of items){
+                if(newarray.indexOf(i)==-1){
+                    newarray.push(i);
+                }
+            }
+            return newarray;
+        }
+        console.log("The new unique array is:",uniqueArray())
 </script>
