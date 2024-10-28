@@ -31,4 +31,53 @@
     }
     console.log("The word with maximum length:",findScaryWord())
     console.log("*******************************************")
+    function sumOfArray(){
+        const mixedArr = [63, 122, 'audi', 61, true, 'volvo', '20', 'lamborghini', 38, 156];
+         var sum=0;
+        for(var i of mixedArr){
+            if(typeof i=="number"){
+                sum+=i;
+            }
+            else if(typeof i=="string"){
+                sum+=i.length;
+            }
+            else if(typeof i=="boolean"){
+                sum+=Number(i);
+            }
+        } 
+        return sum; 
+        }
+        console.log("The sum of array:",sumOfArray())
+        console.log("*******************************************")
+        function avgOfArray(){
+        const mixedArr = [63, 122, 'audi', 61, true, 'volvo', '20', 'lamborghini', 38, 156];
+         var sum=0;
+        for(var i of mixedArr){
+            if(typeof i=="number"){
+                sum+=i;
+            }
+            else if(typeof i=="string"){
+                sum+=i.length;
+            }
+            else if(typeof i=="boolean"){
+                sum+=Number(i);
+            }
+        } 
+        var avg=sum/mixedArr.length;
+        return avg; 
+        }
+        console.log("The average of array:",avgOfArray())
+        console.log("*******************************************")
+        function midpointOfArray(){
+        const levels = [22, 16, 9, 10, 7, 14, 11, 9];
+        var sum=0;
+        for(var i of levels){
+                sum+=i;
+                var avg=sum/levels.length;
+        } 
+        return avg; 
+        }
+        console.log("The average of array:",midpointOfArray())
+        console.log("*******************************************")
+        
 </script>
