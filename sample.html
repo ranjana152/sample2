@@ -91,4 +91,24 @@
             return newarray;
         }
         console.log("The new unique array is:",uniqueArray())
+        console.log("*******************************************")
+        function searchElement(i){
+            const words = [  'door',  'window',  'ceiling',  'roof',  'plinth',  'tiles',  'ceiling',  'flooring'];
+            return words.includes(i)
+        }
+        console.log(searchElement('ceiling'));
+        console.log(searchElement('apple'));
+        console.log(searchElement('flooring'));
+        console.log("*******************************************");
+        function howManyTimesElementRepeated(){
+            const words = [  'machine',  'matter',  'subset',  'trouble',  'starting',  'matter',  'eating',  'matter',  'truth',  'disobedience',  'matter'];
+            var count={};
+            for( var i of words)
+            {
+                count[i]=(count[i] || 0) + 1;
+            }
+            return count;
+        }
+        console.log("The count of items:",howManyTimesElementRepeated());
+        console.log("*******************************************");
 </script>
